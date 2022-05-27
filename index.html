@@ -29,34 +29,36 @@
         </span>
     </header>
     <main>
+	
+		<div id="main_container">
+		    <div id="word_container">
+		        <span id="word_to_guess" class="text_form"></span>
+		    </div>
 
-        <div id="word_container">
-            <span id="word_to_guess" class="text_form"></span>
-        </div>
+		    <div id="answer_container">
+		        <input type="text" name="answer" id="answer" placeholder="Answer" class="text_form" required>
+		        <!-- <button type="submit" id="answer_button">></button> -->
+		    </div>
 
-        <div id="answer_container">
-            <input type="text" name="answer" id="answer" placeholder="Answer" class="text_form" required>
-            <button type="submit" id="answer_button">></button>
-        </div>
+		    <div id="results_container">
+		        <div class="result_container_line">
+		            <span class="result_data"> Correct: <span id="number_right_answers"> 0 </span></span>
+		            <span class="result_data"> Total: <span id="number_total_answers" class="result_data"> 0 </span></span>
+		            <span class="result_data"> Accuracy: <span id="accuracy" class="result_data"> 100% </span></span>
+		        </div>
+		        
+		        <div class="result_container_line">
+		            <span class="result_data"> Win Streak: <span id="current_win_streak"> 0 </span></span>
+		            <span class="result_data"> Longest Win Streak: <span id="max_win_streak" class="result_data"> 0</span></span>
+		    
+		        </div>
+		    </div>
 
-        <div id="results_container">
-            <div class="result_container_line">
-                <span class="result_data"> Correct: <span id="number_right_answers"> 0 </span></span>
-                <span class="result_data"> Total: <span id="number_total_answers" class="result_data"> 0 </span></span>
-                <span class="result_data"> Accuracy: <span id="accuracy" class="result_data"> 100% </span></span>
-            </div>
-            
-            <div class="result_container_line">
-                <span class="result_data"> Win Streak: <span id="current_win_streak"> 0 </span></span>
-                <span class="result_data"> Longest Win Streak: <span id="max_win_streak" class="result_data"> 0</span></span>
-        
-            </div>
-        </div>
+		    <div id="list_mistakes">
 
-        <div id="list_mistakes">
-
-        </div>
-
+		    </div>
+		</div>
+		
     </main>
 
 

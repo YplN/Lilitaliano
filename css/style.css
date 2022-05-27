@@ -6,6 +6,12 @@
     --soft-white: hsla(31, 85%, 92%, 0.99);
 }
 
+html{
+    margin: 0;
+    padding: 0;
+    max-height:fit-content;
+
+}
 body {
     margin: 0;
     padding: 0;
@@ -13,19 +19,21 @@ body {
     background-image: linear-gradient(0deg, #08AEEA 0%, #2AF598 100%); */
     background-color: #FBDA61;
     background-image: linear-gradient(45deg, #FBDA61 0%, #FF5ACD 100%);
-    height: 100%;
+    background-attachment: fixed; /*edit*/
+    height: 100vh;
+    min-width: fit-content;
     font-family: "Segoe UI", Arial, sans-serif;
 }
 header{
 
     display: flex;
     justify-content: space-between;
+    margin:0 auto;
+    max-width:95%;
 }
 
 #title {
     font-size: 40px;
-    margin-top: 10px;
-    margin-left: 10px;
     /* border-bottom: 1px solid white; */
 }
 
@@ -66,9 +74,24 @@ main {
     display: flex;
     align-items: center;
     flex-direction: column;
-    margin: auto;
 }
 
+	#main_container{
+	
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  
+  
+		display:flex;
+    flex-direction: column;
+    align-items: center;
+	}
+	
+	
 .text_form {
     font-family: "Segoe UI", Arial, sans-serif;
     font-size: 50px;
@@ -108,7 +131,8 @@ main {
     font-size: 40px;
     font-weight: bold;
     padding: 5px 10px;
-    flex-grow: 2;
+    width: 100%;
+     /* flex-grow: 2; */
 }
 
 #answer_container input:focus {
@@ -140,20 +164,11 @@ main {
     color: rgb(255, 231, 231);
 }
 
-.container {
-    width: 100%;
-    height: 100vh;
-    background: #e3ebfe;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
+/*
 #answer_button {
     width: 60px;
     height: 60px;
     border: none;
-    /* border: 5px solid white; */
     outline: none;
     background: none;
     color: #fff;
@@ -171,6 +186,7 @@ main {
 #answer_button:hover {
     background-color: rgba(255, 255, 255, 0.5);
 }
+*/ 
 
 #results_container {
     min-width: 500px;
@@ -272,4 +288,24 @@ margin-top: 30px;
         letter-spacing: normal;
         opacity: 1;
     }
+}
+
+@media only screen and (max-width: 1000px) {
+	#answer_container{
+		max-width: 90%;
+	}
+	
+
+	
+	#main_container{
+		width:700px;
+		max-width:90%;
+	}
+	
+	/*
+	#answer_button {
+		width: 30px;
+		height: 30px;
+		font-size: 30px;
+	} */
 }

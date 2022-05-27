@@ -20,7 +20,7 @@ let WORDS = [{
 let wordToGuess;
 let wordToGuessDOM = document.getElementById('word_to_guess');
 
-let answerButton = document.getElementById('answer_button');
+//let answerButton = document.getElementById('answer_button');
 let answer = document.getElementById('answer');
 let answerContainer = document.getElementById('answer_container');
 
@@ -64,7 +64,8 @@ answer.addEventListener("keypress", function (event) {
     if (event.key === "Enter") {
         // Cancel the default action, if needed
         event.preventDefault();
-        answerButton.click();
+        //answerButton.click();
+        handleAnswer();
     }
 });
 
