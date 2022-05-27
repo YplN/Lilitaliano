@@ -287,6 +287,6 @@ function handleAnswer() {
         let success = checkAnswer(answerValue);
         handleSuccess(success);
         updateDataResults(success);
-        printMistakes();
+        //printMistakes();
     }
 }
