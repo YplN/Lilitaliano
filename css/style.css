@@ -356,6 +356,11 @@ header{
 	}
 	
 	
+#languages{
+	position:absolute;
+	bottom:20px;
+}
+	
 
 	/*
 	#answer_button {
