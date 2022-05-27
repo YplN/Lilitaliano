@@ -114,7 +114,12 @@ function checkAnswer(answer) {
 
 
     //return wordToGuess[1].toLowerCase() === answer.toLowerCase();
-    return (accentFold(wordToGuess[oppositeLanguage(LANG)]).toLowerCase() === accentFold(answer).toLowerCase());
+    return (formatString(wordToGuess[oppositeLanguage(LANG)]) === formatString(answer));
+}
+
+
+function formatString(s){
+	return accentFold(s).toLowerCase().trim();
 }
 
 function handleSuccess(success) {
@@ -275,6 +280,7 @@ function accentFold(inStr) {
         }
     );
 }
+
 
 
 
