@@ -160,7 +160,6 @@ function handleSuccess(success) {
 
             wordToGuessDOM.classList.remove("fade_in");
             wordToGuessDOM.classList.add("fade_out");
-            answerContainer.classList.add("right");
 
             setTimeout(function () {
                 wordToGuessDOM.classList.remove("fade_out");
