@@ -1,0 +1,68 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Lil'italiano v2</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mountains+of+Christmas&family=Poiret+One&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+    <header>
+        <h1 id="title">
+        	<span id="title_1">Lil'</span><span id="title_2">ital</span><span id="title_3">iano</span>
+        </h1>
+        <span id="languages">
+        	<img src="img/it_flag.png" alt="Italian" class="language_flag" >
+        	<img src="img/arrow_icon.png" alt="switch" id="arrow_icon" >
+        	<img src="img/fr_flag.png" alt="French" class="language_flag" >
+        </span>
+    </header>
+    <main>
+
+        <div id="word_container">
+            <span id="word_to_guess" class="text_form"></span>
+        </div>
+
+        <div id="answer_container">
+            <input type="text" name="answer" id="answer" placeholder="Answer" class="text_form" required>
+            <button type="submit" id="answer_button">></button>
+        </div>
+
+        <div id="results_container">
+            <div class="result_container_line">
+                <span class="result_data"> Correct: <span id="number_right_answers"> 0 </span></span>
+                <span class="result_data"> Total: <span id="number_total_answers" class="result_data"> 0 </span></span>
+                <span class="result_data"> Accuracy: <span id="accuracy" class="result_data"> 100% </span></span>
+            </div>
+            
+            <div class="result_container_line">
+                <span class="result_data"> Win Streak: <span id="current_win_streak"> 0 </span></span>
+                <span class="result_data"> Longest Win Streak: <span id="max_win_streak" class="result_data"> 0</span></span>
+        
+            </div>
+        </div>
+
+        <div id="list_mistakes">
+
+        </div>
+
+    </main>
+
+
+
+    <script src="js/VERBS.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
